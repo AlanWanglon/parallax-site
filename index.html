@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <style type="text/css">
+        /* configuracoes de pagina  */
+        @font-face {
+			font-family: "Road Rage";
+			src: url("RoadRage.woff");
+		}
+        body, html {
+            margin: 0;
+            font: 16px "lato", sans serif;
+            color: #777;
+            height: 100%;
+        }
+        .conteudo {
+            color: #777;
+            background-color: white;
+            text-align: justify;
+            padding: 50px 80px;
+        }
+
+        /* efeito Parallax
+          ****************  */
+        .caixa1, .caixa2, .caixa3, .caixa4 {
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            text-transform: uppercase;
+            font-family: "Road Rage";
+
+        }
+
+        .caixa1 {
+            background-image: url(imagem1.jpg);
+        }
+        .caixa2 {
+            background-image: url(imagem2.jpg);
+        }
+        .caixa3 {
+            background-image: url(imagem3.jpg);
+        }
+        .caixa4 {
+            background-image: url(imagem4.jpg);
+        }
+        
+        .conteudo-titulo {
+            position: absolute;
+            left: 0;
+            top: 45%;
+            width: 100%;
+            text-align: center;
+        }
+
+        .conteudo-titulo span.titulo {
+            color: #fff;
+            background-color: #111;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 5px;
+        }
+
+        /* fontes  */
+        h3 {
+            text-transform: uppercase;
+            color: #111;
+            text-align: center;
+            
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="caixa1">
+        <div class="conteudo-titulo">
+            <span class="titulo">
+                Passeio de balões
+            </span>
+        </div>
+    </div>
+    <div class="conteudo">
+        <h3>Parallax</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada, nunc vitae consectetur imperdiet, ligula felis consectetur elit, nec bibendum lectus neque ac ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam sit amet vestibulum odio, vitae ullamcorper diam. Aliquam finibus in dui sit amet tempus. Nam gravida tellus mauris, eu porttitor lectus interdum eget. Sed bibendum accumsan pellentesque. Quisque dapibus enim non varius consequat. Donec tincidunt pharetra nisi ut scelerisque. Sed aliquet ligula vitae justo faucibus, in rutrum orci convallis. Integer ut ex in justo vestibulum vulputate at sed ante. Donec leo ex, pretium vel massa a, interdum placerat turpis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada, nunc vitae consectetur imperdiet, ligula felis consectetur elit, nec bibendum lectus neque ac ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam sit amet vestibulum odio, vitae ullamcorper diam. Aliquam finibus in dui sit amet tempus. Nam gravida tellus mauris, eu porttitor lectus interdum eget. Sed bibendum accumsan pellentesque. Quisque dapibus enim non varius consequat. Donec tincidunt pharetra nisi ut scelerisque. Sed aliquet ligula vitae justo faucibus, in rutrum orci convallis. Integer ut ex in justo vestibulum vulputate at sed ante. Donec leo ex, pretium vel massa a, interdum placerat turpis.</p>
+
+    </div>
+    <div class="caixa2">
+        <div class="conteudo-titulo">
+            <span class="titulo">
+                Pegando a estrada
+            </span>
+
+        </div>
+    </div>
+    
+    <div class="caixa4">
+        <div class="conteudo-titulo">
+            <span class="titulo">
+                Montanhas
+            </span>
+
+        </div>
+    </div>
+    <div class="caixa3">
+        <div class="conteudo-titulo">
+            <span class="titulo">
+                Pôr do Sol 
+            </span>
+
+        </div>
+    </div>
+    
+    
+</body>
+</html>
